@@ -1,0 +1,4458 @@
+/**
+  * Gradient Backgrounds
+  * This file defines various gradient backgrounds using Bootstrap's color variables.
+  * It includes linear and radial gradients for different colors and directions.
+  * It also includes utility classes for text and border gradients.
+  * The gradients are designed to be responsive and adapt to different screen sizes.
+  * Additionally, it provides support for dark mode and high contrast preferences.
+  * This library is free for use for any project, commercial or non-commercial.
+  *
+  * @author Maximilian Graf Schimmelmann <office@bytes-commerce.de>
+  */
+.bg-linear-primary {
+  background: linear-gradient(to right, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse {
+  background: linear-gradient(to right, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark {
+  background: linear-gradient(to right, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-vertical {
+  background: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-diagonal {
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-to-top {
+  background: linear-gradient(to top, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-to-top {
+  background: linear-gradient(to top, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-to-left {
+  background: linear-gradient(to left, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-to-left {
+  background: linear-gradient(to left, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-to-top-right {
+  background: linear-gradient(to top right, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-to-top-left {
+  background: linear-gradient(to top left, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-linear-primary-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-linear-primary-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-linear-primary-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-linear-secondary {
+  background: linear-gradient(to right, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse {
+  background: linear-gradient(to right, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark {
+  background: linear-gradient(to right, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-vertical {
+  background: linear-gradient(to bottom, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-diagonal {
+  background: linear-gradient(135deg, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-to-top {
+  background: linear-gradient(to top, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-to-top {
+  background: linear-gradient(to top, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-to-left {
+  background: linear-gradient(to left, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-to-left {
+  background: linear-gradient(to left, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-to-top-right {
+  background: linear-gradient(to top right, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-to-top-left {
+  background: linear-gradient(to top left, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-linear-secondary-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-linear-secondary-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-linear-secondary-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-linear-success {
+  background: linear-gradient(to right, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse {
+  background: linear-gradient(to right, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark {
+  background: linear-gradient(to right, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-vertical {
+  background: linear-gradient(to bottom, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-diagonal {
+  background: linear-gradient(135deg, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-to-top {
+  background: linear-gradient(to top, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-to-top {
+  background: linear-gradient(to top, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-to-left {
+  background: linear-gradient(to left, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-to-left {
+  background: linear-gradient(to left, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-to-top-right {
+  background: linear-gradient(to top right, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-to-top-left {
+  background: linear-gradient(to top left, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-success-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-linear-success-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-linear-success-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-linear-success-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-linear-info {
+  background: linear-gradient(to right, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse {
+  background: linear-gradient(to right, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark {
+  background: linear-gradient(to right, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-vertical {
+  background: linear-gradient(to bottom, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-diagonal {
+  background: linear-gradient(135deg, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-to-top {
+  background: linear-gradient(to top, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-to-top {
+  background: linear-gradient(to top, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-to-left {
+  background: linear-gradient(to left, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-to-left {
+  background: linear-gradient(to left, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-to-top-right {
+  background: linear-gradient(to top right, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-to-top-left {
+  background: linear-gradient(to top left, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-info-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-linear-info-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-linear-info-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-linear-info-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-linear-warning {
+  background: linear-gradient(to right, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse {
+  background: linear-gradient(to right, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark {
+  background: linear-gradient(to right, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-vertical {
+  background: linear-gradient(to bottom, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-diagonal {
+  background: linear-gradient(135deg, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-to-top {
+  background: linear-gradient(to top, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-to-top {
+  background: linear-gradient(to top, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-to-left {
+  background: linear-gradient(to left, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-to-left {
+  background: linear-gradient(to left, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-to-top-right {
+  background: linear-gradient(to top right, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-to-top-left {
+  background: linear-gradient(to top left, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-linear-warning-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-linear-warning-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-linear-warning-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-linear-danger {
+  background: linear-gradient(to right, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse {
+  background: linear-gradient(to right, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark {
+  background: linear-gradient(to right, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-vertical {
+  background: linear-gradient(to bottom, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-diagonal {
+  background: linear-gradient(135deg, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-to-top {
+  background: linear-gradient(to top, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-to-top {
+  background: linear-gradient(to top, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-to-left {
+  background: linear-gradient(to left, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-to-left {
+  background: linear-gradient(to left, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-to-top-right {
+  background: linear-gradient(to top right, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-to-top-left {
+  background: linear-gradient(to top left, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-linear-danger-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-linear-danger-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-linear-danger-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-linear-light {
+  background: linear-gradient(to right, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse {
+  background: linear-gradient(to right, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark {
+  background: linear-gradient(to right, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light {
+  background: linear-gradient(to right, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-vertical {
+  background: linear-gradient(to bottom, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-vertical {
+  background: linear-gradient(to bottom, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-diagonal {
+  background: linear-gradient(135deg, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-diagonal {
+  background: linear-gradient(135deg, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-to-top {
+  background: linear-gradient(to top, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-to-top {
+  background: linear-gradient(to top, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-to-top {
+  background: linear-gradient(to top, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-to-left {
+  background: linear-gradient(to left, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-to-left {
+  background: linear-gradient(to left, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-to-left {
+  background: linear-gradient(to left, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-to-top-right {
+  background: linear-gradient(to top right, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-to-top-right {
+  background: linear-gradient(to top right, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-to-top-left {
+  background: linear-gradient(to top left, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-to-top-left {
+  background: linear-gradient(to top left, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-linear-light-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-light-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-linear-light-light-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-linear-dark {
+  background: linear-gradient(to right, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse {
+  background: linear-gradient(to right, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark {
+  background: linear-gradient(to right, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light {
+  background: linear-gradient(to right, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-vertical {
+  background: linear-gradient(to bottom, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-vertical {
+  background: linear-gradient(to bottom, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-diagonal {
+  background: linear-gradient(135deg, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-diagonal {
+  background: linear-gradient(135deg, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-to-top {
+  background: linear-gradient(to top, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-to-top {
+  background: linear-gradient(to top, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-to-top {
+  background: linear-gradient(to top, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-to-top {
+  background: linear-gradient(to top, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-to-left {
+  background: linear-gradient(to left, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-to-left {
+  background: linear-gradient(to left, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-to-left {
+  background: linear-gradient(to left, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-to-left {
+  background: linear-gradient(to left, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-to-top-right {
+  background: linear-gradient(to top right, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-to-top-right {
+  background: linear-gradient(to top right, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-to-top-left {
+  background: linear-gradient(to top left, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-to-top-left {
+  background: linear-gradient(to top left, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-linear-dark-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-linear-dark-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-linear-dark-light-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-linear-blue {
+  background: linear-gradient(to right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark {
+  background: linear-gradient(to right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-vertical {
+  background: linear-gradient(to bottom, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-diagonal {
+  background: linear-gradient(135deg, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-to-top {
+  background: linear-gradient(to top, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-to-top {
+  background: linear-gradient(to top, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-to-left {
+  background: linear-gradient(to left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-to-left {
+  background: linear-gradient(to left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-to-top-right {
+  background: linear-gradient(to top right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-to-top-left {
+  background: linear-gradient(to top left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-linear-blue-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-blue-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-linear-blue-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-linear-indigo {
+  background: linear-gradient(to right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark {
+  background: linear-gradient(to right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-vertical {
+  background: linear-gradient(to bottom, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-diagonal {
+  background: linear-gradient(135deg, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-to-top {
+  background: linear-gradient(to top, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-to-top {
+  background: linear-gradient(to top, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-to-left {
+  background: linear-gradient(to left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-to-left {
+  background: linear-gradient(to left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-to-top-right {
+  background: linear-gradient(to top right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-to-top-left {
+  background: linear-gradient(to top left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-linear-indigo-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-indigo-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-linear-indigo-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-linear-purple {
+  background: linear-gradient(to right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark {
+  background: linear-gradient(to right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-vertical {
+  background: linear-gradient(to bottom, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-diagonal {
+  background: linear-gradient(135deg, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-to-top {
+  background: linear-gradient(to top, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-to-top {
+  background: linear-gradient(to top, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-to-left {
+  background: linear-gradient(to left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-to-left {
+  background: linear-gradient(to left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-to-top-right {
+  background: linear-gradient(to top right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-to-top-left {
+  background: linear-gradient(to top left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-linear-purple-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-purple-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-linear-purple-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-linear-pink {
+  background: linear-gradient(to right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark {
+  background: linear-gradient(to right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-vertical {
+  background: linear-gradient(to bottom, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-diagonal {
+  background: linear-gradient(135deg, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-to-top {
+  background: linear-gradient(to top, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-to-top {
+  background: linear-gradient(to top, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-to-left {
+  background: linear-gradient(to left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-to-left {
+  background: linear-gradient(to left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-to-top-right {
+  background: linear-gradient(to top right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-to-top-left {
+  background: linear-gradient(to top left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-linear-pink-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-pink-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-linear-pink-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-linear-red {
+  background: linear-gradient(to right, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark {
+  background: linear-gradient(to right, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-vertical {
+  background: linear-gradient(to bottom, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-diagonal {
+  background: linear-gradient(135deg, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-to-top {
+  background: linear-gradient(to top, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-to-top {
+  background: linear-gradient(to top, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-to-left {
+  background: linear-gradient(to left, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-to-left {
+  background: linear-gradient(to left, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-to-top-right {
+  background: linear-gradient(to top right, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-to-top-left {
+  background: linear-gradient(to top left, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-linear-red-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-red-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-linear-red-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-linear-orange {
+  background: linear-gradient(to right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark {
+  background: linear-gradient(to right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-vertical {
+  background: linear-gradient(to bottom, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-diagonal {
+  background: linear-gradient(135deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-to-top {
+  background: linear-gradient(to top, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-to-top {
+  background: linear-gradient(to top, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-to-left {
+  background: linear-gradient(to left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-to-left {
+  background: linear-gradient(to left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-to-top-right {
+  background: linear-gradient(to top right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-to-top-left {
+  background: linear-gradient(to top left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-linear-orange-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-orange-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-linear-orange-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-linear-yellow {
+  background: linear-gradient(to right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark {
+  background: linear-gradient(to right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-vertical {
+  background: linear-gradient(to bottom, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-diagonal {
+  background: linear-gradient(135deg, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-to-top {
+  background: linear-gradient(to top, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-to-top {
+  background: linear-gradient(to top, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-to-left {
+  background: linear-gradient(to left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-to-left {
+  background: linear-gradient(to left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-to-top-right {
+  background: linear-gradient(to top right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-to-top-left {
+  background: linear-gradient(to top left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-linear-yellow-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-yellow-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-linear-yellow-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-linear-green {
+  background: linear-gradient(to right, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark {
+  background: linear-gradient(to right, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-vertical {
+  background: linear-gradient(to bottom, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-diagonal {
+  background: linear-gradient(135deg, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-to-top {
+  background: linear-gradient(to top, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-to-top {
+  background: linear-gradient(to top, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-to-left {
+  background: linear-gradient(to left, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-to-left {
+  background: linear-gradient(to left, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-to-top-right {
+  background: linear-gradient(to top right, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-to-top-left {
+  background: linear-gradient(to top left, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-linear-green-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-green-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-linear-green-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-linear-teal {
+  background: linear-gradient(to right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark {
+  background: linear-gradient(to right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-vertical {
+  background: linear-gradient(to bottom, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-diagonal {
+  background: linear-gradient(135deg, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-to-top {
+  background: linear-gradient(to top, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-to-top {
+  background: linear-gradient(to top, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-to-left {
+  background: linear-gradient(to left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-to-left {
+  background: linear-gradient(to left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-to-top-right {
+  background: linear-gradient(to top right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-to-top-left {
+  background: linear-gradient(to top left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-linear-teal-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-teal-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-linear-teal-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-linear-cyan {
+  background: linear-gradient(to right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark {
+  background: linear-gradient(to right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light {
+  background: linear-gradient(to right, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-vertical {
+  background: linear-gradient(to bottom, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-vertical {
+  background: linear-gradient(to bottom, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-vertical {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-diagonal {
+  background: linear-gradient(135deg, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-diagonal {
+  background: linear-gradient(135deg, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-diagonal {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-diagonal-reverse {
+  background: linear-gradient(45deg, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-diagonal-reverse {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-to-top {
+  background: linear-gradient(to top, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-to-top {
+  background: linear-gradient(to top, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-to-top {
+  background: linear-gradient(to top, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-to-left {
+  background: linear-gradient(to left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-to-left {
+  background: linear-gradient(to left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-to-left {
+  background: linear-gradient(to left, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-to-top-right {
+  background: linear-gradient(to top right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-to-top-right {
+  background: linear-gradient(to top right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-to-top-right {
+  background: linear-gradient(to top right, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-to-top-left {
+  background: linear-gradient(to top left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-to-top-left {
+  background: linear-gradient(to top left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-to-top-left {
+  background: linear-gradient(to top left, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-to-bottom-right {
+  background: linear-gradient(to bottom right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-to-bottom-right {
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-linear-cyan-reverse-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-cyan-dark-to-bottom-left {
+  background: linear-gradient(to bottom left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-linear-cyan-light-to-bottom-left {
+  background: linear-gradient(to bottom left, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-radial-primary {
+  background: radial-gradient(circle, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-center {
+  background: radial-gradient(circle at center, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-top {
+  background: radial-gradient(circle at top, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-top-left {
+  background: radial-gradient(circle at top left, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-top-right {
+  background: radial-gradient(circle at top right, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-ellipse {
+  background: radial-gradient(ellipse, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+}
+
+.bg-radial-primary-reverse {
+  background: radial-gradient(circle, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+}
+
+.bg-radial-primary-dark {
+  background: radial-gradient(circle, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, black)) !important;
+}
+
+.bg-radial-primary-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-primary) 85%, white), var(--bs-primary)) !important;
+}
+
+.bg-radial-secondary {
+  background: radial-gradient(circle, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-center {
+  background: radial-gradient(circle at center, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-top {
+  background: radial-gradient(circle at top, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-top-left {
+  background: radial-gradient(circle at top left, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-top-right {
+  background: radial-gradient(circle at top right, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-ellipse {
+  background: radial-gradient(ellipse, var(--bs-secondary), var(--bs-secondary-bg-subtle)) !important;
+}
+
+.bg-radial-secondary-reverse {
+  background: radial-gradient(circle, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+}
+
+.bg-radial-secondary-dark {
+  background: radial-gradient(circle, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 85%, black)) !important;
+}
+
+.bg-radial-secondary-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-secondary) 80%, white), var(--bs-secondary)) !important;
+}
+
+.bg-radial-success {
+  background: radial-gradient(circle, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-center {
+  background: radial-gradient(circle at center, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-top {
+  background: radial-gradient(circle at top, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-top-left {
+  background: radial-gradient(circle at top left, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-top-right {
+  background: radial-gradient(circle at top right, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-ellipse {
+  background: radial-gradient(ellipse, var(--bs-success), var(--bs-success-bg-subtle)) !important;
+}
+
+.bg-radial-success-reverse {
+  background: radial-gradient(circle, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+}
+
+.bg-radial-success-dark {
+  background: radial-gradient(circle, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, black)) !important;
+}
+
+.bg-radial-success-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-success) 85%, white), var(--bs-success)) !important;
+}
+
+.bg-radial-info {
+  background: radial-gradient(circle, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-center {
+  background: radial-gradient(circle at center, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-top {
+  background: radial-gradient(circle at top, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-top-left {
+  background: radial-gradient(circle at top left, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-top-right {
+  background: radial-gradient(circle at top right, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-ellipse {
+  background: radial-gradient(ellipse, var(--bs-info), var(--bs-info-bg-subtle)) !important;
+}
+
+.bg-radial-info-reverse {
+  background: radial-gradient(circle, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+}
+
+.bg-radial-info-dark {
+  background: radial-gradient(circle, var(--bs-info), color-mix(in srgb, var(--bs-info) 85%, black)) !important;
+}
+
+.bg-radial-info-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-info) 90%, white), var(--bs-info)) !important;
+}
+
+.bg-radial-warning {
+  background: radial-gradient(circle, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-center {
+  background: radial-gradient(circle at center, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-top {
+  background: radial-gradient(circle at top, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-top-left {
+  background: radial-gradient(circle at top left, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-top-right {
+  background: radial-gradient(circle at top right, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-ellipse {
+  background: radial-gradient(ellipse, var(--bs-warning), var(--bs-warning-bg-subtle)) !important;
+}
+
+.bg-radial-warning-reverse {
+  background: radial-gradient(circle, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+}
+
+.bg-radial-warning-dark {
+  background: radial-gradient(circle, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 80%, black)) !important;
+}
+
+.bg-radial-warning-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-warning) 90%, white), var(--bs-warning)) !important;
+}
+
+.bg-radial-danger {
+  background: radial-gradient(circle, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-center {
+  background: radial-gradient(circle at center, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-top {
+  background: radial-gradient(circle at top, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-top-left {
+  background: radial-gradient(circle at top left, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-top-right {
+  background: radial-gradient(circle at top right, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-ellipse {
+  background: radial-gradient(ellipse, var(--bs-danger), var(--bs-danger-bg-subtle)) !important;
+}
+
+.bg-radial-danger-reverse {
+  background: radial-gradient(circle, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+}
+
+.bg-radial-danger-dark {
+  background: radial-gradient(circle, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, black)) !important;
+}
+
+.bg-radial-danger-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-danger) 85%, white), var(--bs-danger)) !important;
+}
+
+.bg-radial-light {
+  background: radial-gradient(circle, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-center {
+  background: radial-gradient(circle at center, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-top {
+  background: radial-gradient(circle at top, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-top-left {
+  background: radial-gradient(circle at top left, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-top-right {
+  background: radial-gradient(circle at top right, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-ellipse {
+  background: radial-gradient(ellipse, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-radial-light-reverse {
+  background: radial-gradient(circle, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-radial-light-dark {
+  background: radial-gradient(circle, var(--bs-light), var(--bs-gray-300)) !important;
+}
+
+.bg-radial-light-light {
+  background: radial-gradient(circle, var(--bs-white), var(--bs-light)) !important;
+}
+
+.bg-radial-dark {
+  background: radial-gradient(circle, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-center {
+  background: radial-gradient(circle at center, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-top {
+  background: radial-gradient(circle at top, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-top-left {
+  background: radial-gradient(circle at top left, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-top-right {
+  background: radial-gradient(circle at top right, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-ellipse {
+  background: radial-gradient(ellipse, var(--bs-dark), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-dark-reverse {
+  background: radial-gradient(circle, var(--bs-gray-700), var(--bs-dark)) !important;
+}
+
+.bg-radial-dark-dark {
+  background: radial-gradient(circle, var(--bs-dark), var(--bs-black)) !important;
+}
+
+.bg-radial-dark-light {
+  background: radial-gradient(circle, var(--bs-gray-600), var(--bs-dark)) !important;
+}
+
+.bg-radial-blue {
+  background: radial-gradient(circle, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-center {
+  background: radial-gradient(circle at center, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-top {
+  background: radial-gradient(circle at top, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-top-left {
+  background: radial-gradient(circle at top left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-top-right {
+  background: radial-gradient(circle at top right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-ellipse {
+  background: radial-gradient(ellipse, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 20%, white)) !important;
+}
+
+.bg-radial-blue-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+}
+
+.bg-radial-blue-dark {
+  background: radial-gradient(circle, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, black)) !important;
+}
+
+.bg-radial-blue-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-blue) 85%, white), var(--bs-blue)) !important;
+}
+
+.bg-radial-indigo {
+  background: radial-gradient(circle, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-center {
+  background: radial-gradient(circle at center, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-top {
+  background: radial-gradient(circle at top, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-top-left {
+  background: radial-gradient(circle at top left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-top-right {
+  background: radial-gradient(circle at top right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-ellipse {
+  background: radial-gradient(ellipse, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 20%, white)) !important;
+}
+
+.bg-radial-indigo-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+}
+
+.bg-radial-indigo-dark {
+  background: radial-gradient(circle, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, black)) !important;
+}
+
+.bg-radial-indigo-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-indigo) 85%, white), var(--bs-indigo)) !important;
+}
+
+.bg-radial-purple {
+  background: radial-gradient(circle, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-center {
+  background: radial-gradient(circle at center, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-top {
+  background: radial-gradient(circle at top, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-top-left {
+  background: radial-gradient(circle at top left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-top-right {
+  background: radial-gradient(circle at top right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-ellipse {
+  background: radial-gradient(ellipse, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 20%, white)) !important;
+}
+
+.bg-radial-purple-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+}
+
+.bg-radial-purple-dark {
+  background: radial-gradient(circle, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, black)) !important;
+}
+
+.bg-radial-purple-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-purple) 85%, white), var(--bs-purple)) !important;
+}
+
+.bg-radial-pink {
+  background: radial-gradient(circle, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-center {
+  background: radial-gradient(circle at center, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-top {
+  background: radial-gradient(circle at top, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-top-left {
+  background: radial-gradient(circle at top left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-top-right {
+  background: radial-gradient(circle at top right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-ellipse {
+  background: radial-gradient(ellipse, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 20%, white)) !important;
+}
+
+.bg-radial-pink-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+}
+
+.bg-radial-pink-dark {
+  background: radial-gradient(circle, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, black)) !important;
+}
+
+.bg-radial-pink-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-pink) 85%, white), var(--bs-pink)) !important;
+}
+
+.bg-radial-red {
+  background: radial-gradient(circle, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-center {
+  background: radial-gradient(circle at center, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-top {
+  background: radial-gradient(circle at top, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-top-left {
+  background: radial-gradient(circle at top left, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-top-right {
+  background: radial-gradient(circle at top right, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-ellipse {
+  background: radial-gradient(ellipse, var(--bs-red), color-mix(in srgb, var(--bs-red) 20%, white)) !important;
+}
+
+.bg-radial-red-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+}
+
+.bg-radial-red-dark {
+  background: radial-gradient(circle, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, black)) !important;
+}
+
+.bg-radial-red-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-red) 85%, white), var(--bs-red)) !important;
+}
+
+.bg-radial-orange {
+  background: radial-gradient(circle, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-center {
+  background: radial-gradient(circle at center, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-top {
+  background: radial-gradient(circle at top, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-top-left {
+  background: radial-gradient(circle at top left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-top-right {
+  background: radial-gradient(circle at top right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-ellipse {
+  background: radial-gradient(ellipse, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 20%, white)) !important;
+}
+
+.bg-radial-orange-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+}
+
+.bg-radial-orange-dark {
+  background: radial-gradient(circle, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black)) !important;
+}
+
+.bg-radial-orange-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-orange) 85%, white), var(--bs-orange)) !important;
+}
+
+.bg-radial-yellow {
+  background: radial-gradient(circle, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-center {
+  background: radial-gradient(circle at center, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-top {
+  background: radial-gradient(circle at top, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-top-left {
+  background: radial-gradient(circle at top left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-top-right {
+  background: radial-gradient(circle at top right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-ellipse {
+  background: radial-gradient(ellipse, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 20%, white)) !important;
+}
+
+.bg-radial-yellow-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+}
+
+.bg-radial-yellow-dark {
+  background: radial-gradient(circle, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 75%, black)) !important;
+}
+
+.bg-radial-yellow-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-yellow) 90%, white), var(--bs-yellow)) !important;
+}
+
+.bg-radial-green {
+  background: radial-gradient(circle, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-center {
+  background: radial-gradient(circle at center, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-top {
+  background: radial-gradient(circle at top, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-top-left {
+  background: radial-gradient(circle at top left, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-top-right {
+  background: radial-gradient(circle at top right, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-ellipse {
+  background: radial-gradient(ellipse, var(--bs-green), color-mix(in srgb, var(--bs-green) 20%, white)) !important;
+}
+
+.bg-radial-green-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+}
+
+.bg-radial-green-dark {
+  background: radial-gradient(circle, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, black)) !important;
+}
+
+.bg-radial-green-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-green) 85%, white), var(--bs-green)) !important;
+}
+
+.bg-radial-teal {
+  background: radial-gradient(circle, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-center {
+  background: radial-gradient(circle at center, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-top {
+  background: radial-gradient(circle at top, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-top-left {
+  background: radial-gradient(circle at top left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-top-right {
+  background: radial-gradient(circle at top right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-ellipse {
+  background: radial-gradient(ellipse, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 20%, white)) !important;
+}
+
+.bg-radial-teal-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+}
+
+.bg-radial-teal-dark {
+  background: radial-gradient(circle, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, black)) !important;
+}
+
+.bg-radial-teal-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-teal) 85%, white), var(--bs-teal)) !important;
+}
+
+.bg-radial-cyan {
+  background: radial-gradient(circle, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-center {
+  background: radial-gradient(circle at center, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-top {
+  background: radial-gradient(circle at top, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-bottom {
+  background: radial-gradient(circle at bottom, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-top-left {
+  background: radial-gradient(circle at top left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-top-right {
+  background: radial-gradient(circle at top right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-bottom-left {
+  background: radial-gradient(circle at bottom left, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-bottom-right {
+  background: radial-gradient(circle at bottom right, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-ellipse {
+  background: radial-gradient(ellipse, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 20%, white)) !important;
+}
+
+.bg-radial-cyan-reverse {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+}
+
+.bg-radial-cyan-dark {
+  background: radial-gradient(circle, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 85%, black)) !important;
+}
+
+.bg-radial-cyan-light {
+  background: radial-gradient(circle, color-mix(in srgb, var(--bs-cyan) 90%, white), var(--bs-cyan)) !important;
+}
+
+.bg-linear-rainbow {
+  background: linear-gradient(135deg, var(--bs-red), var(--bs-orange), var(--bs-yellow), var(--bs-green), var(--bs-blue), var(--bs-indigo), var(--bs-purple)) !important;
+}
+
+.bg-linear-sunset {
+  background: linear-gradient(135deg, var(--bs-orange), var(--bs-red), var(--bs-purple)) !important;
+}
+
+.bg-linear-ocean {
+  background: linear-gradient(135deg, var(--bs-blue), var(--bs-cyan), var(--bs-teal)) !important;
+}
+
+.bg-linear-forest {
+  background: linear-gradient(135deg, var(--bs-green), var(--bs-teal), color-mix(in srgb, var(--bs-green) 80%, black)) !important;
+}
+
+.bg-linear-fire {
+  background: linear-gradient(135deg, var(--bs-red), var(--bs-orange), var(--bs-yellow)) !important;
+}
+
+.bg-linear-sky {
+  background: linear-gradient(to bottom, var(--bs-cyan), var(--bs-blue), var(--bs-indigo)) !important;
+}
+
+.bg-linear-earth {
+  background: linear-gradient(135deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, black), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-rainbow {
+  background: radial-gradient(circle, var(--bs-red), var(--bs-orange), var(--bs-yellow), var(--bs-green), var(--bs-blue), var(--bs-indigo), var(--bs-purple)) !important;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bg-animated-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.gradient-overlay {
+  position: relative;
+}
+.gradient-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.gradient-overlay.overlay-dark::before {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+}
+.gradient-overlay.overlay-light::before {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+}
+
+@media (max-width: 768px) {
+  .bg-linear-mobile-vertical {
+    background: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+  }
+  .bg-radial-mobile-center {
+    background: radial-gradient(circle at center, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+  }
+}
+.text-gradient-primary {
+  background: linear-gradient(135deg, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-secondary {
+  background: linear-gradient(135deg, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 80%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-success {
+  background: linear-gradient(135deg, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-info {
+  background: linear-gradient(135deg, var(--bs-info), color-mix(in srgb, var(--bs-info) 90%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-warning {
+  background: linear-gradient(135deg, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 90%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-danger {
+  background: linear-gradient(135deg, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-light {
+  background: linear-gradient(135deg, var(--bs-light), var(--bs-white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-dark {
+  background: linear-gradient(135deg, var(--bs-dark), var(--bs-gray-600));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-indigo {
+  background: linear-gradient(135deg, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(135deg, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-yellow {
+  background: linear-gradient(135deg, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 90%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-teal {
+  background: linear-gradient(135deg, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 90%, white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.border-gradient-primary {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, white)) border-box;
+}
+
+.border-gradient-secondary {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 80%, white)) border-box;
+}
+
+.border-gradient-success {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, white)) border-box;
+}
+
+.border-gradient-info {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-info), color-mix(in srgb, var(--bs-info) 90%, white)) border-box;
+}
+
+.border-gradient-warning {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 90%, white)) border-box;
+}
+
+.border-gradient-danger {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, white)) border-box;
+}
+
+.border-gradient-light {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-light), var(--bs-white)) border-box;
+}
+
+.border-gradient-dark {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-dark), var(--bs-gray-600)) border-box;
+}
+
+.border-gradient-blue {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, white)) border-box;
+}
+
+.border-gradient-indigo {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, white)) border-box;
+}
+
+.border-gradient-purple {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, white)) border-box;
+}
+
+.border-gradient-pink {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, white)) border-box;
+}
+
+.border-gradient-red {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, white)) border-box;
+}
+
+.border-gradient-orange {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, white)) border-box;
+}
+
+.border-gradient-yellow {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 90%, white)) border-box;
+}
+
+.border-gradient-green {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, white)) border-box;
+}
+
+.border-gradient-teal {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, white)) border-box;
+}
+
+.border-gradient-cyan {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 90%, white)) border-box;
+}
+
+.bg-gradient-hover-primary {
+  background: var(--bs-primary-bg-subtle);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-primary:hover {
+  background: linear-gradient(135deg, var(--bs-primary), color-mix(in srgb, var(--bs-primary) 85%, white)) !important;
+}
+
+.bg-gradient-hover-secondary {
+  background: var(--bs-secondary-bg-subtle);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-secondary:hover {
+  background: linear-gradient(135deg, var(--bs-secondary), color-mix(in srgb, var(--bs-secondary) 80%, white)) !important;
+}
+
+.bg-gradient-hover-success {
+  background: var(--bs-success-bg-subtle);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-success:hover {
+  background: linear-gradient(135deg, var(--bs-success), color-mix(in srgb, var(--bs-success) 85%, white)) !important;
+}
+
+.bg-gradient-hover-info {
+  background: var(--bs-info-bg-subtle);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-info:hover {
+  background: linear-gradient(135deg, var(--bs-info), color-mix(in srgb, var(--bs-info) 90%, white)) !important;
+}
+
+.bg-gradient-hover-warning {
+  background: var(--bs-warning-bg-subtle);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-warning:hover {
+  background: linear-gradient(135deg, var(--bs-warning), color-mix(in srgb, var(--bs-warning) 90%, white)) !important;
+}
+
+.bg-gradient-hover-danger {
+  background: var(--bs-danger-bg-subtle);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-danger:hover {
+  background: linear-gradient(135deg, var(--bs-danger), color-mix(in srgb, var(--bs-danger) 85%, white)) !important;
+}
+
+.bg-gradient-hover-light {
+  background: var(--bs-white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-light:hover {
+  background: linear-gradient(135deg, var(--bs-light), var(--bs-white)) !important;
+}
+
+.bg-gradient-hover-dark {
+  background: var(--bs-gray-700);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-dark:hover {
+  background: linear-gradient(135deg, var(--bs-dark), var(--bs-gray-600)) !important;
+}
+
+.bg-gradient-hover-blue {
+  background: color-mix(in srgb, var(--bs-blue) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-blue:hover {
+  background: linear-gradient(135deg, var(--bs-blue), color-mix(in srgb, var(--bs-blue) 85%, white)) !important;
+}
+
+.bg-gradient-hover-indigo {
+  background: color-mix(in srgb, var(--bs-indigo) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-indigo:hover {
+  background: linear-gradient(135deg, var(--bs-indigo), color-mix(in srgb, var(--bs-indigo) 85%, white)) !important;
+}
+
+.bg-gradient-hover-purple {
+  background: color-mix(in srgb, var(--bs-purple) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-purple:hover {
+  background: linear-gradient(135deg, var(--bs-purple), color-mix(in srgb, var(--bs-purple) 85%, white)) !important;
+}
+
+.bg-gradient-hover-pink {
+  background: color-mix(in srgb, var(--bs-pink) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-pink:hover {
+  background: linear-gradient(135deg, var(--bs-pink), color-mix(in srgb, var(--bs-pink) 85%, white)) !important;
+}
+
+.bg-gradient-hover-red {
+  background: color-mix(in srgb, var(--bs-red) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-red:hover {
+  background: linear-gradient(135deg, var(--bs-red), color-mix(in srgb, var(--bs-red) 85%, white)) !important;
+}
+
+.bg-gradient-hover-orange {
+  background: color-mix(in srgb, var(--bs-orange) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-orange:hover {
+  background: linear-gradient(135deg, var(--bs-orange), color-mix(in srgb, var(--bs-orange) 85%, white)) !important;
+}
+
+.bg-gradient-hover-yellow {
+  background: color-mix(in srgb, var(--bs-yellow) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-yellow:hover {
+  background: linear-gradient(135deg, var(--bs-yellow), color-mix(in srgb, var(--bs-yellow) 90%, white)) !important;
+}
+
+.bg-gradient-hover-green {
+  background: color-mix(in srgb, var(--bs-green) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-green:hover {
+  background: linear-gradient(135deg, var(--bs-green), color-mix(in srgb, var(--bs-green) 85%, white)) !important;
+}
+
+.bg-gradient-hover-teal {
+  background: color-mix(in srgb, var(--bs-teal) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-teal:hover {
+  background: linear-gradient(135deg, var(--bs-teal), color-mix(in srgb, var(--bs-teal) 85%, white)) !important;
+}
+
+.bg-gradient-hover-cyan {
+  background: color-mix(in srgb, var(--bs-cyan) 20%, white);
+  transition: background 0.3s ease;
+}
+.bg-gradient-hover-cyan:hover {
+  background: linear-gradient(135deg, var(--bs-cyan), color-mix(in srgb, var(--bs-cyan) 90%, white)) !important;
+}
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-secondary)) !important;
+}
+
+.bg-gradient-success-to-info {
+  background: linear-gradient(135deg, var(--bs-success), var(--bs-info)) !important;
+}
+
+.bg-gradient-warning-to-danger {
+  background: linear-gradient(135deg, var(--bs-warning), var(--bs-danger)) !important;
+}
+
+.bg-gradient-light-to-dark {
+  background: linear-gradient(135deg, var(--bs-light), var(--bs-dark)) !important;
+}
+
+@supports not (color: color-mix(in srgb, red, blue)) {
+  .bg-linear-primary-light {
+    background: linear-gradient(to right, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+  }
+  .bg-linear-primary-dark {
+    background: linear-gradient(to right, var(--bs-primary), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-primary-light {
+    background: radial-gradient(circle, var(--bs-primary-bg-subtle), var(--bs-primary)) !important;
+  }
+  .bg-radial-primary-dark {
+    background: radial-gradient(circle, var(--bs-primary), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-secondary-light {
+    background: linear-gradient(to right, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+  }
+  .bg-linear-secondary-dark {
+    background: linear-gradient(to right, var(--bs-secondary), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-secondary-light {
+    background: radial-gradient(circle, var(--bs-secondary-bg-subtle), var(--bs-secondary)) !important;
+  }
+  .bg-radial-secondary-dark {
+    background: radial-gradient(circle, var(--bs-secondary), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-success-light {
+    background: linear-gradient(to right, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+  }
+  .bg-linear-success-dark {
+    background: linear-gradient(to right, var(--bs-success), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-success-light {
+    background: radial-gradient(circle, var(--bs-success-bg-subtle), var(--bs-success)) !important;
+  }
+  .bg-radial-success-dark {
+    background: radial-gradient(circle, var(--bs-success), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-info-light {
+    background: linear-gradient(to right, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+  }
+  .bg-linear-info-dark {
+    background: linear-gradient(to right, var(--bs-info), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-info-light {
+    background: radial-gradient(circle, var(--bs-info-bg-subtle), var(--bs-info)) !important;
+  }
+  .bg-radial-info-dark {
+    background: radial-gradient(circle, var(--bs-info), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-warning-light {
+    background: linear-gradient(to right, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+  }
+  .bg-linear-warning-dark {
+    background: linear-gradient(to right, var(--bs-warning), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-warning-light {
+    background: radial-gradient(circle, var(--bs-warning-bg-subtle), var(--bs-warning)) !important;
+  }
+  .bg-radial-warning-dark {
+    background: radial-gradient(circle, var(--bs-warning), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-danger-light {
+    background: linear-gradient(to right, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+  }
+  .bg-linear-danger-dark {
+    background: linear-gradient(to right, var(--bs-danger), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-danger-light {
+    background: radial-gradient(circle, var(--bs-danger-bg-subtle), var(--bs-danger)) !important;
+  }
+  .bg-radial-danger-dark {
+    background: radial-gradient(circle, var(--bs-danger), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-light-light {
+    background: linear-gradient(to right, var(--bs-white), var(--bs-light)) !important;
+  }
+  .bg-linear-light-dark {
+    background: linear-gradient(to right, var(--bs-light), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-light-light {
+    background: radial-gradient(circle, var(--bs-white), var(--bs-light)) !important;
+  }
+  .bg-radial-light-dark {
+    background: radial-gradient(circle, var(--bs-light), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-dark-light {
+    background: linear-gradient(to right, var(--bs-gray-700), var(--bs-dark)) !important;
+  }
+  .bg-linear-dark-dark {
+    background: linear-gradient(to right, var(--bs-dark), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-dark-light {
+    background: radial-gradient(circle, var(--bs-gray-700), var(--bs-dark)) !important;
+  }
+  .bg-radial-dark-dark {
+    background: radial-gradient(circle, var(--bs-dark), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-blue-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+  }
+  .bg-linear-blue-dark {
+    background: linear-gradient(to right, var(--bs-blue), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-blue-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-blue) 20%, white), var(--bs-blue)) !important;
+  }
+  .bg-radial-blue-dark {
+    background: radial-gradient(circle, var(--bs-blue), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-indigo-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+  }
+  .bg-linear-indigo-dark {
+    background: linear-gradient(to right, var(--bs-indigo), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-indigo-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-indigo) 20%, white), var(--bs-indigo)) !important;
+  }
+  .bg-radial-indigo-dark {
+    background: radial-gradient(circle, var(--bs-indigo), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-purple-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+  }
+  .bg-linear-purple-dark {
+    background: linear-gradient(to right, var(--bs-purple), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-purple-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-purple) 20%, white), var(--bs-purple)) !important;
+  }
+  .bg-radial-purple-dark {
+    background: radial-gradient(circle, var(--bs-purple), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-pink-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+  }
+  .bg-linear-pink-dark {
+    background: linear-gradient(to right, var(--bs-pink), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-pink-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-pink) 20%, white), var(--bs-pink)) !important;
+  }
+  .bg-radial-pink-dark {
+    background: radial-gradient(circle, var(--bs-pink), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-red-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+  }
+  .bg-linear-red-dark {
+    background: linear-gradient(to right, var(--bs-red), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-red-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-red) 20%, white), var(--bs-red)) !important;
+  }
+  .bg-radial-red-dark {
+    background: radial-gradient(circle, var(--bs-red), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-orange-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+  }
+  .bg-linear-orange-dark {
+    background: linear-gradient(to right, var(--bs-orange), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-orange-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-orange) 20%, white), var(--bs-orange)) !important;
+  }
+  .bg-radial-orange-dark {
+    background: radial-gradient(circle, var(--bs-orange), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-yellow-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+  }
+  .bg-linear-yellow-dark {
+    background: linear-gradient(to right, var(--bs-yellow), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-yellow-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-yellow) 20%, white), var(--bs-yellow)) !important;
+  }
+  .bg-radial-yellow-dark {
+    background: radial-gradient(circle, var(--bs-yellow), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-green-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+  }
+  .bg-linear-green-dark {
+    background: linear-gradient(to right, var(--bs-green), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-green-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-green) 20%, white), var(--bs-green)) !important;
+  }
+  .bg-radial-green-dark {
+    background: radial-gradient(circle, var(--bs-green), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-teal-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+  }
+  .bg-linear-teal-dark {
+    background: linear-gradient(to right, var(--bs-teal), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-teal-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-teal) 20%, white), var(--bs-teal)) !important;
+  }
+  .bg-radial-teal-dark {
+    background: radial-gradient(circle, var(--bs-teal), var(--bs-gray-800)) !important;
+  }
+  .bg-linear-cyan-light {
+    background: linear-gradient(to right, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+  }
+  .bg-linear-cyan-dark {
+    background: linear-gradient(to right, var(--bs-cyan), var(--bs-gray-800)) !important;
+  }
+  .bg-radial-cyan-light {
+    background: radial-gradient(circle, color-mix(in srgb, var(--bs-cyan) 20%, white), var(--bs-cyan)) !important;
+  }
+  .bg-radial-cyan-dark {
+    background: radial-gradient(circle, var(--bs-cyan), var(--bs-gray-800)) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .bg-gradient-theme-primary {
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+  }
+  .bg-gradient-theme-surface {
+    background: linear-gradient(135deg, var(--bs-dark), var(--bs-gray-800)) !important;
+  }
+}
+@media (prefers-contrast: high) {
+  [class*=bg-linear-],
+  [class*=bg-radial-] {
+    background: var(--bs-primary) !important;
+  }
+}
+
+/*# sourceMappingURL=gradient-backgrounds.css.map */

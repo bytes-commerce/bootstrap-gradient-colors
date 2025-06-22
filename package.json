@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-gradients",
+  "version": "1.0.0",
+  "description": "A comprehensive package of legitimate bootstrap gradient colors, ready to be used in any bootstrap based project.",
+  "main": "dist/gradient-backgrounds.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytes-commerce/bootstrap-gradient-colors.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "gradient",
+    "radial",
+    "css",
+    "free",
+    "colors",
+    "dropin",
+    "bytescommerce"
+  ],
+  "author": "Maximilian Graf Schimmelmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bytes-commerce/bootstrap-gradient-colors/issues"
+  },
+  "homepage": "https://github.com/bytes-commerce/bootstrap-gradient-colors#readme"
+}

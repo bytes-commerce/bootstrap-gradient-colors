@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Gradient Backgrounds Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="dist/gradient-backgrounds.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --doc-primary: #667eea;
+            --doc-secondary: #764ba2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--doc-primary), var(--doc-secondary));
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .gradient-example {
+            height: 120px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gradient-example:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .gradient-example::after {
+            content: attr(data-class);
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0 2rem 0;
+            border-left: 5px solid var(--doc-primary);
+        }
+
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .copy-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .nav-pills .nav-link.active {
+            background: linear-gradient(135deg, var(--doc-primary), var(--doc-secondary));
+        }
+
+        .table-of-contents {
+            position: sticky;
+            top: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 1.5rem;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .direction-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .special-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .search-box {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: white;
+            padding: 1rem 0;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 2rem;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .filter-btn {
+            padding: 0.25rem 0.75rem;
+            border: 1px solid #dee2e6;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active {
+            background: var(--doc-primary);
+            color: white;
+            border-color: var(--doc-primary);
+        }
+
+        .text-example {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .border-example {
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 0;
+            }
+
+            .gradient-example {
+                height: 80px;
+                font-size: 0.9rem;
+            }
+
+            .color-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-3">Bootstrap Gradient Backgrounds</h1>
+                <p class="lead mb-4">A comprehensive collection of gradient background utilities that seamlessly integrate with Bootstrap's color system. Create stunning visual effects with linear and radial gradients.</p>
+                <div class="d-flex gap-3">
+                    <a href="#getting-started" class="btn btn-light btn-lg">Get Started</a>
+                    <a href="#examples" class="btn btn-outline-light btn-lg">View Examples</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="bg-radial-warning p-4 rounded-3 text-center">
+                    <i class="fas fa-palette fa-3x mb-3"></i>
+                    <h4>500+ Gradient Classes</h4>
+                    <p class="mb-0">Ready to use with Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="table-of-contents">
+                <h5 class="fw-bold mb-3">Table of Contents</h5>
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#getting-started">Getting Started</a>
+                    <a class="nav-link" href="#linear-gradients">Linear Gradients</a>
+                    <a class="nav-link" href="#radial-gradients">Radial Gradients</a>
+                    <a class="nav-link" href="#special-gradients">Special Gradients</a>
+                    <a class="nav-link" href="#text-gradients">Text Gradients</a>
+                    <a class="nav-link" href="#border-gradients">Border Gradients</a>
+                    <a class="nav-link" href="#hover-effects">Hover Effects</a>
+                    <a class="nav-link" href="#responsive">Responsive</a>
+                    <a class="nav-link" href="#customization">Customization</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+            <div class="search-box">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search gradient classes...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="linear">Linear</button>
+                            <button class="filter-btn" data-filter="radial">Radial</button>
+                            <button class="filter-btn" data-filter="primary">Primary</button>
+                            <button class="filter-btn" data-filter="success">Success</button>
+                            <button class="filter-btn" data-filter="danger">Danger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="getting-started">
+                <div class="section-header">
+                    <h2><i class="fas fa-rocket me-2"></i>Getting Started</h2>
+                    <p class="mb-0">Learn how to integrate and use Bootstrap gradient backgrounds in your project.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Installation</h4>
+                        <p>Include the gradient CSS file after Bootstrap:</p>
+                        <div class="position-relative">
+                                <pre class="code-block"><code>&lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
+&lt;link href="gradient-backgrounds.css" rel="stylesheet"&gt;</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Basic Usage</h4>
+                        <p>Apply gradient classes to any element:</p>
+                        <div class="position-relative">
+                                <pre class="code-block"><code>&lt;div class="bg-linear-primary"&gt;
+  Linear Primary Gradient
+&lt;/div&gt;
+
+&lt;div class="bg-radial-success"&gt;
+  Radial Success Gradient
+&lt;/div&gt;</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="linear-gradients">
+                <div class="section-header">
+                    <h2><i class="fas fa-arrows-alt-h me-2"></i>Linear Gradients</h2>
+                    <p class="mb-0">Linear gradients transition colors along a straight line in various directions.</p>
+                </div>
+
+                <h4>Bootstrap Colors</h4>
+                <div class="color-grid" data-category="linear">
+                    <div class="gradient-item" data-color="primary">
+                        <div class="gradient-example bg-linear-primary" data-class="bg-linear-primary">
+                            Primary Linear
+                        </div>
+                        <code>.bg-linear-primary</code>
+                    </div>
+                    <div class="gradient-item" data-color="secondary">
+                        <div class="gradient-example bg-linear-secondary" data-class="bg-linear-secondary">
+                            Secondary Linear
+                        </div>
+                        <code>.bg-linear-secondary</code>
+                    </div>
+                    <div class="gradient-item" data-color="success">
+                        <div class="gradient-example bg-linear-success" data-class="bg-linear-success">
+                            Success Linear
+                        </div>
+                        <code>.bg-linear-success</code>
+                    </div>
+                    <div class="gradient-item" data-color="info">
+                        <div class="gradient-example bg-linear-info" data-class="bg-linear-info">
+                            Info Linear
+                        </div>
+                        <code>.bg-linear-info</code>
+                    </div>
+                    <div class="gradient-item" data-color="warning">
+                        <div class="gradient-example bg-linear-warning" data-class="bg-linear-warning">
+                            Warning Linear
+                        </div>
+                        <code>.bg-linear-warning</code>
+                    </div>
+                    <div class="gradient-item" data-color="danger">
+                        <div class="gradient-example bg-linear-danger" data-class="bg-linear-danger">
+                            Danger Linear
+                        </div>
+                        <code>.bg-linear-danger</code>
+                    </div>
+                </div>
+
+                <h4>Direction Variants</h4>
+                <p>Add direction suffixes to control gradient direction:</p>
+                <div class="direction-grid" data-category="linear">
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-primary-vertical" data-class="bg-linear-primary-vertical">
+                            Vertical
+                        </div>
+                        <code>.bg-linear-primary-vertical</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-primary-diagonal" data-class="bg-linear-primary-diagonal">
+                            Diagonal
+                        </div>
+                        <code>.bg-linear-primary-diagonal</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-primary-to-top" data-class="bg-linear-primary-to-top">
+                            To Top
+                        </div>
+                        <code>.bg-linear-primary-to-top</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-primary-to-bottom-right" data-class="bg-linear-primary-to-bottom-right">
+                            To Bottom Right
+                        </div>
+                        <code>.bg-linear-primary-to-bottom-right</code>
+                    </div>
+                </div>
+
+                <h4>Color Variants</h4>
+                <div class="direction-grid" data-category="linear">
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-primary-light" data-class="bg-linear-primary-light">
+                            Light Variant
+                        </div>
+                        <code>.bg-linear-primary-light</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-primary-dark" data-class="bg-linear-primary-dark">
+                            Dark Variant
+                        </div>
+                        <code>.bg-linear-primary-dark</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-primary-reverse" data-class="bg-linear-primary-reverse">
+                            Reverse
+                        </div>
+                        <code>.bg-linear-primary-reverse</code>
+                    </div>
+                </div>
+            </section>
+
+            <section id="radial-gradients">
+                <div class="section-header">
+                    <h2><i class="fas fa-circle me-2"></i>Radial Gradients</h2>
+                    <p class="mb-0">Radial gradients transition colors from a central point outward in a circular pattern.</p>
+                </div>
+
+                <h4>Basic Radial Gradients</h4>
+                <div class="color-grid" data-category="radial">
+                    <div class="gradient-item" data-color="primary">
+                        <div class="gradient-example bg-radial-primary" data-class="bg-radial-primary">
+                            Primary Radial
+                        </div>
+                        <code>.bg-radial-primary</code>
+                    </div>
+                    <div class="gradient-item" data-color="success">
+                        <div class="gradient-example bg-radial-success" data-class="bg-radial-success">
+                            Success Radial
+                        </div>
+                        <code>.bg-radial-success</code>
+                    </div>
+                    <div class="gradient-item" data-color="danger">
+                        <div class="gradient-example bg-radial-danger" data-class="bg-radial-danger">
+                            Danger Radial
+                        </div>
+                        <code>.bg-radial-danger</code>
+                    </div>
+                    <div class="gradient-item" data-color="warning">
+                        <div class="gradient-example bg-radial-warning" data-class="bg-radial-warning">
+                            Warning Radial
+                        </div>
+                        <code>.bg-radial-warning</code>
+                    </div>
+                </div>
+
+                <h4>Position Variants</h4>
+                <div class="direction-grid" data-category="radial">
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-radial-primary-top" data-class="bg-radial-primary-top">
+                            From Top
+                        </div>
+                        <code>.bg-radial-primary-top</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-radial-primary-bottom" data-class="bg-radial-primary-bottom">
+                            From Bottom
+                        </div>
+                        <code>.bg-radial-primary-bottom</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-radial-primary-top-left" data-class="bg-radial-primary-top-left">
+                            From Top Left
+                        </div>
+                        <code>.bg-radial-primary-top-left</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-radial-primary-ellipse" data-class="bg-radial-primary-ellipse">
+                            Ellipse
+                        </div>
+                        <code>.bg-radial-primary-ellipse</code>
+                    </div>
+                </div>
+            </section>
+
+            <section id="special-gradients">
+                <div class="section-header">
+                    <h2><i class="fas fa-magic me-2"></i>Special Gradients</h2>
+                    <p class="mb-0">Pre-designed multi-color gradients for stunning visual effects.</p>
+                </div>
+
+                <div class="special-grid" data-category="special">
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-rainbow" data-class="bg-linear-rainbow">
+                            Rainbow Linear
+                        </div>
+                        <code>.bg-linear-rainbow</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-sunset" data-class="bg-linear-sunset">
+                            Sunset
+                        </div>
+                        <code>.bg-linear-sunset</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-ocean" data-class="bg-linear-ocean">
+                            Ocean
+                        </div>
+                        <code>.bg-linear-ocean</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-forest" data-class="bg-linear-forest">
+                            Forest
+                        </div>
+                        <code>.bg-linear-forest</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-fire" data-class="bg-linear-fire">
+                            Fire
+                        </div>
+                        <code>.bg-linear-fire</code>
+                    </div>
+                    <div class="gradient-item">
+                        <div class="gradient-example bg-linear-sky" data-class="bg-linear-sky">
+                            Sky
+                        </div>
+                        <code>.bg-linear-sky</code>
+                    </div>
+                </div>
+            </section>
+
+            <section id="text-gradients">
+                <div class="section-header">
+                    <h2><i class="fas fa-font me-2"></i>Text Gradients</h2>
+                    <p class="mb-0">Apply gradient effects to text for modern typography.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-example text-gradient-primary">Gradient Text</div>
+                        <code>.text-gradient-primary</code>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-example text-gradient-success">Success Text</div>
+                        <code>.text-gradient-success</code>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-example text-gradient-danger">Danger Text</div>
+                        <code>.text-gradient-danger</code>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-example text-gradient-warning">Warning Text</div>
+                        <code>.text-gradient-warning</code>
+                    </div>
+                </div>
+
+                <div class="position-relative mt-4">
+                        <pre class="code-block"><code>&lt;h1 class="text-gradient-primary"&gt;Gradient Heading&lt;/h1&gt;
+&lt;p class="text-gradient-success"&gt;Gradient paragraph text&lt;/p&gt;</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+            </section>
+
+            <section id="border-gradients">
+                <div class="section-header">
+                    <h2><i class="fas fa-border-style me-2"></i>Border Gradients</h2>
+                    <p class="mb-0">Create gradient borders for enhanced visual appeal.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="border-example border-gradient-primary">
+                            <h5>Primary Border</h5>
+                            <p>Content with gradient border</p>
+                        </div>
+                        <code>.border-gradient-primary</code>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="border-example border-gradient-success">
+                            <h5>Success Border</h5>
+                            <p>Content with gradient border</p>
+                        </div>
+                        <code>.border-gradient-success</code>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hover-effects">
+                <div class="section-header">
+                    <h2><i class="fas fa-hand-pointer me-2"></i>Hover Effects</h2>
+                    <p class="mb-0">Interactive gradient effects that activate on hover.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="gradient-example bg-gradient-hover-primary" data-class="bg-gradient-hover-primary">
+                            Hover for Primary
+                        </div>
+                        <code>.bg-gradient-hover-primary</code>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gradient-example bg-gradient-hover-success" data-class="bg-gradient-hover-success">
+                            Hover for Success
+                        </div>
+                        <code>.bg-gradient-hover-success</code>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gradient-example bg-gradient-hover-danger" data-class="bg-gradient-hover-danger">
+                            Hover for Danger
+                        </div>
+                        <code>.bg-gradient-hover-danger</code>
+                    </div>
+                </div>
+            </section>
+
+            <section id="responsive">
+                <div class="section-header">
+                    <h2><i class="fas fa-mobile-alt me-2"></i>Responsive Gradients</h2>
+                    <p class="mb-0">Gradients that adapt to different screen sizes.</p>
+                </div>
+
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Mobile Specific:</strong> Use <code>.bg-linear-mobile-vertical</code> and <code>.bg-radial-mobile-center</code> for mobile-optimized gradients.
+                </div>
+
+                <div class="position-relative">
+                        <pre class="code-block"><code>@media (max-width: 768px) {
+  .bg-linear-mobile-vertical {
+    background: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle));
+  }
+}</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+            </section>
+
+            <section id="customization">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs me-2"></i>Customization</h2>
+                    <p class="mb-0">Learn how to customize and extend the gradient system.</p>
+                </div>
+
+                <h4>Custom CSS Variables</h4>
+                <p>Override Bootstrap's CSS variables to customize gradient colors:</p>
+                <div class="position-relative">
+                        <pre class="code-block"><code>:root {
+  --bs-primary: #your-color;
+  --bs-primary-bg-subtle: #your-subtle-color;
+}
+
+/* Gradients will automatically use your custom colors */</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+
+                <h4>Creating Custom Gradients</h4>
+                <div class="position-relative">
+                        <pre class="code-block"><code>.my-custom-gradient {
+  background: linear-gradient(135deg, #667eea, #764ba2) !important;
+}
+
+.my-radial-gradient {
+  background: radial-gradient(circle, #ff6b6b, #feca57) !important;
+}</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-linear-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Bootstrap Gradient Backgrounds</h5>
+                <p>A comprehensive gradient utility library for Bootstrap projects.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="mb-0">&copy; 2005 <a class="text-white" href="https://www.bytes-commerce.de/" target="_blank">Bytes Commerce UG</a></p>
+                <small>This bundle is available for free, and can be used for private and commercial projects.</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+<script>
+    // Copy code functionality
+    function copyCode(button) {
+        const codeBlock = button.previousElementSibling.querySelector('code');
+        const text = codeBlock.textContent;
+
+        navigator.clipboard.writeText(text).then(() => {
+            const originalText = button.textContent;
+            button.textContent = 'Copied!';
+            button.style.background = 'rgba(40, 167, 69, 0.8)';
+
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = 'rgba(255,255,255,0.1)';
+            }, 2000);
+        });
+    }
+
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const gradientItems = document.querySelectorAll('.gradient-item');
+
+        gradientItems.forEach(item => {
+            const className = item.querySelector('code').textContent.toLowerCase();
+            const shouldShow = className.includes(searchTerm);
+            item.style.display = shouldShow ? 'block' : 'none';
+        });
+    });
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.dataset.filter;
+            const gradientItems = document.querySelectorAll('.gradient-item');
+
+            gradientItems.forEach(item => {
+                let shouldShow = false;
+
+                if (filter === 'all') {
+                    shouldShow = true;
+                } else if (filter === 'linear') {
+                    shouldShow = item.closest('[data-category="linear"]') !== null;
+                } else if (filter === 'radial') {
+                    shouldShow = item.closest('[data-category="radial"]') !== null;
+                } else {
+                    shouldShow = item.dataset.color === filter;
+                }
+
+                item.style.display = shouldShow ? 'block' : 'none';
+            });
+        });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('.gradient-example').forEach(example => {
+        example.addEventListener('click', function() {
+            const className = this.dataset.class;
+            navigator.clipboard.writeText(className).then(() => {
+                const tooltip = document.createElement('div');
+                tooltip.textContent = 'Copied: ' + className;
+                tooltip.style.cssText = `
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background: #28a745;
+                        color: white;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        z-index: 9999;
+                        font-size: 14px;
+                    `;
+                document.body.appendChild(tooltip);
+
+                setTimeout(() => {
+                    document.body.removeChild(tooltip);
+                }, 2000);
+            });
+        });
+    });
+</script>
+</body>
+</html>

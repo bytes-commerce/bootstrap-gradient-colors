@@ -1,0 +1,409 @@
+/**
+  * Gradient Backgrounds
+  * This file defines various gradient backgrounds using Bootstrap's color variables.
+  * It includes linear and radial gradients for different colors and directions.
+  * It also includes utility classes for text and border gradients.
+  * The gradients are designed to be responsive and adapt to different screen sizes.
+  * Additionally, it provides support for dark mode and high contrast preferences.
+  * This library is free for use for any project, commercial or non-commercial.
+  *
+  * @author Maximilian Graf Schimmelmann <office@bytes-commerce.de>
+  */
+$colors: (
+        "primary": (
+                base: var(--bs-primary),
+                subtle: var(--bs-primary-bg-subtle),
+                light: color-mix(in srgb, var(--bs-primary) 85%, white),
+                dark: color-mix(in srgb, var(--bs-primary) 85%, black)
+        ),
+        "secondary": (
+                base: var(--bs-secondary),
+                subtle: var(--bs-secondary-bg-subtle),
+                light: color-mix(in srgb, var(--bs-secondary) 80%, white),
+                dark: color-mix(in srgb, var(--bs-secondary) 85%, black)
+        ),
+        "success": (
+                base: var(--bs-success),
+                subtle: var(--bs-success-bg-subtle),
+                light: color-mix(in srgb, var(--bs-success) 85%, white),
+                dark: color-mix(in srgb, var(--bs-success) 85%, black)
+        ),
+        "info": (
+                base: var(--bs-info),
+                subtle: var(--bs-info-bg-subtle),
+                light: color-mix(in srgb, var(--bs-info) 90%, white),
+                dark: color-mix(in srgb, var(--bs-info) 85%, black)
+        ),
+        "warning": (
+                base: var(--bs-warning),
+                subtle: var(--bs-warning-bg-subtle),
+                light: color-mix(in srgb, var(--bs-warning) 90%, white),
+                dark: color-mix(in srgb, var(--bs-warning) 80%, black)
+        ),
+        "danger": (
+                base: var(--bs-danger),
+                subtle: var(--bs-danger-bg-subtle),
+                light: color-mix(in srgb, var(--bs-danger) 85%, white),
+                dark: color-mix(in srgb, var(--bs-danger) 85%, black)
+        ),
+        "light": (
+                base: var(--bs-light),
+                subtle: var(--bs-white),
+                light: var(--bs-white),
+                dark: var(--bs-gray-300)
+        ),
+        "dark": (
+                base: var(--bs-dark),
+                subtle: var(--bs-gray-700),
+                light: var(--bs-gray-600),
+                dark: var(--bs-black)
+        ),
+        "blue": (
+                base: var(--bs-blue),
+                subtle: color-mix(in srgb, var(--bs-blue) 20%, white),
+                light: color-mix(in srgb, var(--bs-blue) 85%, white),
+                dark: color-mix(in srgb, var(--bs-blue) 85%, black)
+        ),
+        "indigo": (
+                base: var(--bs-indigo),
+                subtle: color-mix(in srgb, var(--bs-indigo) 20%, white),
+                light: color-mix(in srgb, var(--bs-indigo) 85%, white),
+                dark: color-mix(in srgb, var(--bs-indigo) 85%, black)
+        ),
+        "purple": (
+                base: var(--bs-purple),
+                subtle: color-mix(in srgb, var(--bs-purple) 20%, white),
+                light: color-mix(in srgb, var(--bs-purple) 85%, white),
+                dark: color-mix(in srgb, var(--bs-purple) 85%, black)
+        ),
+        "pink": (
+                base: var(--bs-pink),
+                subtle: color-mix(in srgb, var(--bs-pink) 20%, white),
+                light: color-mix(in srgb, var(--bs-pink) 85%, white),
+                dark: color-mix(in srgb, var(--bs-pink) 85%, black)
+        ),
+        "red": (
+                base: var(--bs-red),
+                subtle: color-mix(in srgb, var(--bs-red) 20%, white),
+                light: color-mix(in srgb, var(--bs-red) 85%, white),
+                dark: color-mix(in srgb, var(--bs-red) 85%, black)
+        ),
+        "orange": (
+                base: var(--bs-orange),
+                subtle: color-mix(in srgb, var(--bs-orange) 20%, white),
+                light: color-mix(in srgb, var(--bs-orange) 85%, white),
+                dark: color-mix(in srgb, var(--bs-orange) 85%, black)
+        ),
+        "yellow": (
+                base: var(--bs-yellow),
+                subtle: color-mix(in srgb, var(--bs-yellow) 20%, white),
+                light: color-mix(in srgb, var(--bs-yellow) 90%, white),
+                dark: color-mix(in srgb, var(--bs-yellow) 75%, black)
+        ),
+        "green": (
+                base: var(--bs-green),
+                subtle: color-mix(in srgb, var(--bs-green) 20%, white),
+                light: color-mix(in srgb, var(--bs-green) 85%, white),
+                dark: color-mix(in srgb, var(--bs-green) 85%, black)
+        ),
+        "teal": (
+                base: var(--bs-teal),
+                subtle: color-mix(in srgb, var(--bs-teal) 20%, white),
+                light: color-mix(in srgb, var(--bs-teal) 85%, white),
+                dark: color-mix(in srgb, var(--bs-teal) 85%, black)
+        ),
+        "cyan": (
+                base: var(--bs-cyan),
+                subtle: color-mix(in srgb, var(--bs-cyan) 20%, white),
+                light: color-mix(in srgb, var(--bs-cyan) 90%, white),
+                dark: color-mix(in srgb, var(--bs-cyan) 85%, black)
+        )
+);
+
+$gradient-directions: (
+        "": "to right",
+        "-vertical": "to bottom",
+        "-diagonal": "135deg",
+        "-diagonal-reverse": "45deg",
+        "-to-top": "to top",
+        "-to-left": "to left",
+        "-to-top-right": "to top right",
+        "-to-top-left": "to top left",
+        "-to-bottom-right": "to bottom right",
+        "-to-bottom-left": "to bottom left"
+);
+
+@each $color-name, $color-values in $colors {
+  $base: map-get($color-values, base);
+  $subtle: map-get($color-values, subtle);
+  $light: map-get($color-values, light);
+  $dark: map-get($color-values, dark);
+
+  @each $direction-suffix, $direction in $gradient-directions {
+    .bg-linear-#{$color-name}#{$direction-suffix} {
+      background: linear-gradient(#{$direction}, #{$base}, #{$subtle}) !important;
+    }
+
+    .bg-linear-#{$color-name}-reverse#{$direction-suffix} {
+      background: linear-gradient(#{$direction}, #{$subtle}, #{$base}) !important;
+    }
+
+    .bg-linear-#{$color-name}-dark#{$direction-suffix} {
+      background: linear-gradient(#{$direction}, #{$base}, #{$dark}) !important;
+    }
+
+    .bg-linear-#{$color-name}-light#{$direction-suffix} {
+      background: linear-gradient(#{$direction}, #{$light}, #{$base}) !important;
+    }
+  }
+}
+
+@each $color-name, $color-values in $colors {
+  $base: map-get($color-values, base);
+  $subtle: map-get($color-values, subtle);
+  $light: map-get($color-values, light);
+  $dark: map-get($color-values, dark);
+
+  .bg-radial-#{$color-name} {
+    background: radial-gradient(circle, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-center {
+    background: radial-gradient(circle at center, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-top {
+    background: radial-gradient(circle at top, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-bottom {
+    background: radial-gradient(circle at bottom, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-top-left {
+    background: radial-gradient(circle at top left, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-top-right {
+    background: radial-gradient(circle at top right, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-bottom-left {
+    background: radial-gradient(circle at bottom left, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-bottom-right {
+    background: radial-gradient(circle at bottom right, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-ellipse {
+    background: radial-gradient(ellipse, #{$base}, #{$subtle}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-reverse {
+    background: radial-gradient(circle, #{$subtle}, #{$base}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-dark {
+    background: radial-gradient(circle, #{$base}, #{$dark}) !important;
+  }
+
+
+  .bg-radial-#{$color-name}-light {
+    background: radial-gradient(circle, #{$light}, #{$base}) !important;
+  }
+}
+
+
+.bg-linear-rainbow {
+  background: linear-gradient(135deg,
+          var(--bs-red), var(--bs-orange), var(--bs-yellow),
+          var(--bs-green), var(--bs-blue), var(--bs-indigo), var(--bs-purple)) !important;
+}
+
+.bg-linear-sunset {
+  background: linear-gradient(135deg, var(--bs-orange), var(--bs-red), var(--bs-purple)) !important;
+}
+
+.bg-linear-ocean {
+  background: linear-gradient(135deg, var(--bs-blue), var(--bs-cyan), var(--bs-teal)) !important;
+}
+
+.bg-linear-forest {
+  background: linear-gradient(135deg, var(--bs-green), var(--bs-teal),
+          color-mix(in srgb, var(--bs-green) 80%, black)) !important;
+}
+
+.bg-linear-fire {
+  background: linear-gradient(135deg, var(--bs-red), var(--bs-orange), var(--bs-yellow)) !important;
+}
+
+.bg-linear-sky {
+  background: linear-gradient(to bottom, var(--bs-cyan), var(--bs-blue), var(--bs-indigo)) !important;
+}
+
+.bg-linear-earth {
+  background: linear-gradient(135deg, var(--bs-orange),
+          color-mix(in srgb, var(--bs-orange) 85%, black), var(--bs-gray-700)) !important;
+}
+
+.bg-radial-rainbow {
+  background: radial-gradient(circle,
+          var(--bs-red), var(--bs-orange), var(--bs-yellow),
+          var(--bs-green), var(--bs-blue), var(--bs-indigo), var(--bs-purple)) !important;
+}
+
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+
+.gradient-overlay {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  &.overlay-dark::before {
+    background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+  }
+
+  &.overlay-light::before {
+    background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+  }
+}
+
+
+@media (max-width: 768px) {
+  .bg-linear-mobile-vertical {
+    background: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+  }
+
+  .bg-radial-mobile-center {
+    background: radial-gradient(circle at center, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+  }
+}
+
+@each $color-name, $color-values in $colors {
+  $base: map-get($color-values, base);
+  $light: map-get($color-values, light);
+
+  .text-gradient-#{$color-name} {
+    background: linear-gradient(135deg, #{$base}, #{$light});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+  }
+}
+
+@each $color-name, $color-values in $colors {
+  $base: map-get($color-values, base);
+  $light: map-get($color-values, light);
+
+  .border-gradient-#{$color-name} {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(135deg, #{$base}, #{$light}) border-box;
+  }
+}
+
+@each $color-name, $color-values in $colors {
+  $base: map-get($color-values, base);
+  $subtle: map-get($color-values, subtle);
+  $light: map-get($color-values, light);
+
+  .bg-gradient-hover-#{$color-name} {
+    background: #{$subtle};
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(135deg, #{$base}, #{$light}) !important;
+    }
+  }
+}
+
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-secondary)) !important;
+}
+
+.bg-gradient-success-to-info {
+  background: linear-gradient(135deg, var(--bs-success), var(--bs-info)) !important;
+}
+
+.bg-gradient-warning-to-danger {
+  background: linear-gradient(135deg, var(--bs-warning), var(--bs-danger)) !important;
+}
+
+.bg-gradient-light-to-dark {
+  background: linear-gradient(135deg, var(--bs-light), var(--bs-dark)) !important;
+}
+
+
+@supports not (color: color-mix(in srgb, red, blue)) {
+
+  @each $color-name, $color-values in $colors {
+    $base: map-get($color-values, base);
+    $subtle: map-get($color-values, subtle);
+
+    .bg-linear-#{$color-name}-light {
+      background: linear-gradient(to right, #{$subtle}, #{$base}) !important;
+    }
+
+    .bg-linear-#{$color-name}-dark {
+      background: linear-gradient(to right, #{$base}, var(--bs-gray-800)) !important;
+    }
+
+    .bg-radial-#{$color-name}-light {
+      background: radial-gradient(circle, #{$subtle}, #{$base}) !important;
+    }
+
+    .bg-radial-#{$color-name}-dark {
+      background: radial-gradient(circle, #{$base}, var(--bs-gray-800)) !important;
+    }
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .bg-gradient-theme-primary {
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-bg-subtle)) !important;
+  }
+
+  .bg-gradient-theme-surface {
+    background: linear-gradient(135deg, var(--bs-dark), var(--bs-gray-800)) !important;
+  }
+}
+
+
+@media (prefers-contrast: high) {
+  [class*="bg-linear-"],
+  [class*="bg-radial-"] {
+    background: var(--bs-primary) !important;
+  }
+}
